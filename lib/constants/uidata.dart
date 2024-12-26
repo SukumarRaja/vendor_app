@@ -4,7 +4,7 @@ List<dynamic> categories = [
     "title": "Fried Rice",
     "value": "fried_rice",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/4a4cd06e-94de-4478-8588-66eee01354d4-rice.png",
+        "https://image.similarpng.com/thumbnail/2020/10/Delicious-rice-on-transparent-background-PNG.png",
     "createdAt": "2023-10-24T16:12:23.571Z",
     "updatedAt": "2023-10-24T16:12:23.571Z",
     "__v": 0
@@ -14,7 +14,7 @@ List<dynamic> categories = [
     "title": "Curry",
     "value": "curry",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/ee2d952c-1d7d-48f7-81b3-cb967343eb6c-curry.png",
+        "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsX29mZmljZV80OF9waG90b19vZl9jaGlja2VuX3Rpa2thX21hc2FsYV9yZWFsaXN0aWNfc2ltcF80MzExYThlOC05Njc0LTRmYjgtYjU4Zi03YzA3NmRiZjkzMTMucG5n.png",
     "__v": 0
   },
   {
@@ -22,7 +22,7 @@ List<dynamic> categories = [
     "title": "Pizza",
     "value": "pizza",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/466693e6-f999-42e0-8794-09325ece1b45-Pizza.png",
+        "https://img.pikbest.com/origin/09/19/19/80spIkbEsT8H4.png!sw800",
     "__v": 0
   },
   {
@@ -30,7 +30,7 @@ List<dynamic> categories = [
     "title": "Pasta",
     "value": "pasta",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/6645cf41-bc89-4dd0-9f80-bba9487633b2-Spaghetti.png",
+        "https://static.vecteezy.com/system/resources/thumbnails/027/144/753/small_2x/penne-pasta-with-tomato-sauce-parmesan-cheese-and-basil-on-transparent-background-png.png",
     "__v": 0
   },
   {
@@ -38,7 +38,7 @@ List<dynamic> categories = [
     "title": "Beverages",
     "value": "beverages",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/93c4b3df-9e55-4308-a834-9fe4ad67c0b3-bar.png",
+        "https://e7.pngegg.com/pngimages/562/449/png-clipart-cold-refreshment-rum-and-coke-cocktail-distilled-beverage-fizzy-drinks-mai-tai-tequila-recipe-non-alcoholic-beverage-thumbnail.png",
     "__v": 0
   },
   {
@@ -46,7 +46,7 @@ List<dynamic> categories = [
     "title": "Burgers",
     "value": "burgers",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/3c94bc09-b8b9-4961-accb-f68b7e8121cc-Hamburger.png",
+        "https://e7.pngegg.com/pngimages/201/77/png-clipart-delicious-beef-burger-delicious-beef-burger-tomato-thumbnail.png",
     "__v": 0
   },
   {
@@ -54,7 +54,7 @@ List<dynamic> categories = [
     "title": "Chicken",
     "value": "chicken",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/139718b2-2832-40c5-8d7b-11fd9feb0aac-chicken.png",
+        "https://i.pinimg.com/736x/b9/1f/3c/b91f3c05fc20bcddab91eea25695a13b.jpg",
     "__v": 0
   },
   {
@@ -62,7 +62,7 @@ List<dynamic> categories = [
     "title": "More",
     "value": "more",
     "imageUrl":
-        "https://d326fntlu7tb1e.cloudfront.net/uploads/08323562-a3c6-461d-95a3-b3817c99871b-more.png",
+        "https://www.pngkey.com/png/detail/232-2328150_more-apps-icon-png.png",
     "__v": 0
   }
 ];

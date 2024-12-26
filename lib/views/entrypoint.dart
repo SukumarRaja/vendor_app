@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import '../constants/constants.dart';
 import '../controllers/tab_index.dart';
 import 'cart.dart';
-import 'home.dart';
+import 'home/home.dart';
 import 'profile.dart';
 import 'search.dart';
 
