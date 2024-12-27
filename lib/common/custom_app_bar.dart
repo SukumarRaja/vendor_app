@@ -23,10 +23,10 @@ class CustomAppBar extends StatelessWidget {
             CircleAvatar(
               radius: 22.r,
               backgroundColor: kSecondary,
-              backgroundImage: NetworkImage(
+              backgroundImage: const NetworkImage(
                   'https://www.shutterstock.com/image-photo/business-woman-confident-smart-teacher-260nw-1842925690.jpg'),
             ),
-            SizedBox(width: 15),
+            const SizedBox(width: 15),
             Expanded(
               flex: 3,
               child: Column(
@@ -44,10 +44,10 @@ class CustomAppBar extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               getTimeOfDay(),
-              style: TextStyle(fontSize: 35),
+              style: const TextStyle(fontSize: 35),
             )
           ],
         ),

@@ -24,7 +24,7 @@ class AllCategories extends StatelessWidget {
               onTap: () {
                 Get.back();
               },
-              child: Icon(Icons.arrow_back_ios)),
+              child: const Icon(Icons.arrow_back_ios)),
           title: ReusableText(
             text: "Categories",
             style: appStyle(14, kGray, FontWeight.w600),
@@ -39,9 +39,9 @@ class AllCategories extends StatelessWidget {
               var data = categories[index];
               return ListTile(
                 onTap: () {
-                  Get.to(() => CategoryPage(),
+                  Get.to(() => const CategoryPage(),
                       transition: Transition.fadeIn,
-                      duration: Duration(milliseconds: 900));
+                      duration: const Duration(milliseconds: 900));
                 },
                 leading: CircleAvatar(
                   radius: 18.r,
