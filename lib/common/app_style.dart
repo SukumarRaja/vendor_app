@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-appStyle(size, color, weight) {
-  return TextStyle(
-      fontSize: double.parse("$size"), color: color, fontWeight: weight);
+appStyle(double size, color, weight) {
+  return TextStyle(fontSize: size.sp, color: color, fontWeight: weight);
 }
