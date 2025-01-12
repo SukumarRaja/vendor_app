@@ -29,14 +29,6 @@ class Home extends StatelessWidget {
           children: [
             const CategoryList(),
             Heading(
-                text: "Nearby Restaurants",
-                onTap: () {
-                  Get.to(() => const AllNearbyRestaurants(),
-                      transition: Transition.cupertino,
-                      duration: const Duration(milliseconds: 900));
-                }),
-            const NearbyRestaurantCard(),
-            Heading(
                 text: "Try Something New",
                 onTap: () {
                   Get.to(() => const Recommendations(),
@@ -44,6 +36,14 @@ class Home extends StatelessWidget {
                       duration: const Duration(milliseconds: 900));
                 }),
             const FoodList(),
+            Heading(
+                text: "Nearby Restaurants",
+                onTap: () {
+                  Get.to(() => const AllNearbyRestaurants(),
+                      transition: Transition.cupertino,
+                      duration: const Duration(milliseconds: 900));
+                }),
+            const NearbyRestaurantCard(),
             Heading(
                 text: "Fastest food closer to you",
                 onTap: () {

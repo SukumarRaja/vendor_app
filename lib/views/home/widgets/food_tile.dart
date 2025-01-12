@@ -6,11 +6,12 @@ import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import '../../../common/app_style.dart';
 import '../../../common/reusable_text.dart';
 import '../../../constants/constants.dart';
+import '../../../models/foods.dart';
 
 class FoodTile extends StatelessWidget {
-  const FoodTile({super.key, this.food});
+  const FoodTile({super.key, required this.food});
 
-  final dynamic food;
+  final FoodsModel food;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +38,7 @@ class FoodTile extends StatelessWidget {
                           width: 70.w,
                           height: 70.h,
                           child: Image.network(
-                            food['imageUrl'],
+                            food.imageUrl[0],
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -53,7 +54,8 @@ class FoodTile extends StatelessWidget {
                                   itemCount: 5,
                                   itemSize: 15.h,
                                   itemBuilder: (context, i) {
-                                    return Icon(Icons.star, color: kSecondary);
+                                    return const Icon(Icons.star,
+                                        color: kSecondary);
                                   }),
                             ))
                       ],
@@ -65,21 +67,21 @@ class FoodTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       ReusableText(
-                          text: food['title'],
+                          text: food.title,
                           style: appStyle(11, kDark, FontWeight.w400)),
                       ReusableText(
-                          text: "Delivery time: ${food['time']}",
+                          text: "Delivery time: ${food.time}",
                           style: appStyle(11, kGray, FontWeight.w400)),
                       SizedBox(
                         width: width * 0.7,
                         height: 15.h,
                         child: ListView.builder(
-                            itemCount: food['additives'].length,
+                            itemCount: food.additives.length,
                             shrinkWrap: true,
                             physics: const BouncingScrollPhysics(),
                             scrollDirection: Axis.horizontal,
                             itemBuilder: (context, i) {
-                              var data = food['additives'][i];
+                              var data = food.additives[i];
                               return Container(
                                 padding: EdgeInsets.all(2.h),
                                 margin: EdgeInsets.only(right: 5.w),
@@ -87,7 +89,7 @@ class FoodTile extends StatelessWidget {
                                     color: kSecondaryLight,
                                     borderRadius: BorderRadius.circular(9.r)),
                                 child: ReusableText(
-                                    text: "${data['title']}",
+                                    text: data.title,
                                     style: appStyle(8, kGray, FontWeight.w400)),
                               );
                             }),
@@ -108,7 +110,7 @@ class FoodTile extends StatelessWidget {
               decoration: BoxDecoration(
                   color: kPrimary, borderRadius: BorderRadius.circular(10.r)),
               child: ReusableText(
-                  text: "\u20B9 ${food['price'].toStringAsFixed(2)}",
+                  text: "\u20B9 ${food.price.toStringAsFixed(2)}",
                   style: appStyle(12, kLightWhite, FontWeight.w600)),
             ),
           ),

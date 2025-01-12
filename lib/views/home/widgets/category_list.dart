@@ -21,12 +21,12 @@ class CategoryList extends HookWidget {
     List<CategoriesModel>? categoryList = hookResult.data;
     final isLoading = hookResult.isLoading;
     final error = hookResult.error;
-    return Container(
-      height: 75.h,
-      padding: EdgeInsets.only(left: 12.w, top: 10.h),
-      child: isLoading
-          ? const CategoriesShimmer()
-          : ListView(
+    return isLoading
+        ? const CategoriesShimmer()
+        : Container(
+            height: 75.h,
+            padding: EdgeInsets.only(left: 12.w, top: 10.h),
+            child: ListView(
               scrollDirection: Axis.horizontal,
               children: List.generate(categoryList!.length, (index) {
                 CategoriesModel data = categoryList[index];
