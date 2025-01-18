@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:vendor_app/common/shimmers/nearby_shimmer.dart';
 
-import '../../../common/shimmers/foodlist_shimmer.dart';
 import '../../../hooks/fetch_foods.dart';
 import '../../../models/foods.dart';
+import '../../food/food_page.dart';
 import 'food_card.dart';
 
 class FoodList extends HookWidget {
@@ -33,7 +34,9 @@ class FoodList extends HookWidget {
                   price: data.price.toStringAsFixed(2),
                   time: data.time,
                   image: data.imageUrl[0],
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(() => FoodPage(food: data));
+                  },
                 );
               }),
             ),
