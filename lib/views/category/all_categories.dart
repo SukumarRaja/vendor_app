@@ -47,7 +47,7 @@ class AllCategories extends HookWidget {
                     var data = categories[index];
                     return ListTile(
                       onTap: () {
-                        Get.to(() => const CategoryPage(),
+                        Get.to(() => CategoryPage(data),
                             transition: Transition.fadeIn,
                             duration: const Duration(milliseconds: 900));
                       },

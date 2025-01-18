@@ -4,7 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../common/shimmers/foodlist_shimmer.dart';
 import '../../../constants/constants.dart';
-import '../../../hooks/fetch_all_foods.dart';
+import '../../../controllers/category.dart';
+import '../../../hooks/fetch_category_foods.dart';
 import '../../../models/foods.dart';
 import 'food_tile.dart';
 
@@ -13,7 +14,8 @@ class CategoryFoodsList extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final hookResult = useFetchAllFoods(code: "41007428");
+    final hookResult = useFetchCategoryFoods(
+        categoryId: "${CategoryController.to.category}", code: "41007428");
     List<FoodsModel>? foods = hookResult.data;
     final isLoading = hookResult.isLoading;
     final error = hookResult.error;
