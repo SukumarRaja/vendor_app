@@ -7,7 +7,7 @@ import '../controllers/tab_index.dart';
 import 'cart.dart';
 import 'home/home.dart';
 import 'profile.dart';
-import 'search.dart';
+import 'search/search.dart';
 
 class MainScreen extends StatelessWidget {
   MainScreen({super.key});
