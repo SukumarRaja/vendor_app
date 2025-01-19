@@ -10,4 +10,22 @@ class FoodController extends GetxController {
   set currentPage(value) {
     _currentPage.value = value;
   }
+
+  final _count = 1.obs;
+
+  get count => _count.value;
+
+  set count(value) {
+    _count.value = value;
+  }
+
+  increment() {
+    count++;
+  }
+
+  decrement() {
+    if (count > 1) {
+      count--;
+    }
+  }
 }
